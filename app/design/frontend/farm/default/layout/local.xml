@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <remove name="global_notices"/>
+        <reference name="header">
+            <block type="cms/block" name="farm-header-info"><action method="setBlockId"><block_id>farm-header-info</block_id></action></block>
+        </reference>
+    </default>
+</layout>
