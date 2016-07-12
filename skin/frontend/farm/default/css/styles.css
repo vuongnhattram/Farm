@@ -489,26 +489,21 @@ input,
 select,
 table,
 textarea {
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   color: #636363;
   font-size: 14px;
   line-height: 1.5;
 }
 
 a {
-  color: #3399cc;
+   color: #212121;
   text-decoration: none;
 }
 
 a:hover {
-  color: #2e8ab8;
-  text-decoration: underline;
+  color: #457103;
 }
 
-a:focus {
-  outline-color: #3091c2;
-  color: #143d52;
-}
 
 ol,
 ul {
@@ -524,7 +519,6 @@ h1, .h1 {
   margin: 0;
   margin-bottom: 0.7em;
   color: #3399cc;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 28px;
   font-weight: 400;
   font-style: normal;
@@ -537,7 +531,6 @@ h2, .h2 {
   margin: 0;
   margin-bottom: 0.5em;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -550,7 +543,6 @@ h3, .h3 {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -563,7 +555,6 @@ h4, .h4 {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -572,24 +563,11 @@ h4, .h4 {
   text-transform: uppercase;
 }
 
-h5, .h5 {
-  margin: 0;
-  margin-bottom: 10px;
-  color: #636363;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
-  font-size: 13px;
-  font-weight: bold;
-  font-style: normal;
-  line-height: 1.4;
-  text-rendering: optimizeSpeed;
-  text-transform: uppercase;
-}
 
 h6, .h6 {
   margin: 0;
   margin-bottom: 5px;
   color: #636363;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
   font-style: normal;
@@ -662,22 +640,18 @@ h6, .h6 {
   position: relative;
   padding: 10px 0 0;
   margin-bottom: 5px;
-  border-top: 1px solid #cccccc;
 }
 .block-title h2,
 .block-title h3,
 .block-title strong {
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
   line-height: 1.4;
   text-rendering: optimizeSpeed;
   text-transform: uppercase;
-  color: #3399cc;
   margin-bottom: 0;
   text-transform: uppercase;
   font-weight: 600;
@@ -750,7 +724,6 @@ body:not(.customer-account) .block:first-child .block-title {
     margin: 0;
     margin-bottom: 10px;
     color: #636363;
-    font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
     font-style: normal;
@@ -796,7 +769,6 @@ body:not(.customer-account) .block:first-child .block-title {
     margin: 0;
     margin-bottom: 10px;
     color: #636363;
-    font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
     font-style: normal;
@@ -856,7 +828,6 @@ body:not(.customer-account) .block:first-child .block-title {
 .block-account li,
 .block-cms-menu li {
   text-transform: uppercase;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   margin: 7px 0;
 }
 .block-account li strong,
@@ -924,7 +895,6 @@ body:not(.customer-account) .block:first-child .block-title {
   color: #FFFFFF;
   font-size: 13px;
   font-weight: normal;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   line-height: 19px;
   text-align: center;
   text-transform: uppercase;
@@ -996,7 +966,6 @@ a.button:hover {
   text-transform: uppercase;
   display: inline-block;
   color: #3399cc;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 .button2 span:hover,
 .button2 span span:hover {
@@ -1143,7 +1112,6 @@ a.button:hover {
 .breadcrumbs li {
   float: left;
   font-size: 12px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -1200,7 +1168,6 @@ a.button:hover {
   line-height: 20px;
   width: 100%;
   font-size: 10px;
-  font-family: Arial, "Helvetica Neue", Verdana, Arial, sans-serif;
   font-weight: bold;
 }
 .btn-remove:hover:after {
@@ -1289,28 +1256,21 @@ a.button:hover {
 /* -------------------------------------------- *
  * Container
  */
-.main-container,
+.main-container,.container,
 .footer-container {
   position: relative;
-  max-width: 1260px;
+  max-width: 1170px;
   margin: 0 auto;
-  padding: 15px;
 }
-.main-container:after,
+.main-container:after,.container:after,
 .footer-container:after {
   content: '';
   display: table;
   clear: both;
 }
 
-@media only screen and (min-width: 480px) {
-  .main-container,
-  .footer-container {
-    padding: 30px;
-  }
-}
 .footer-container {
-  padding-top: 0px;
+  padding:15px 0;
 }
 
 /* -------------------------------------------- *
@@ -1534,7 +1494,6 @@ a.button:hover {
   text-align: center;
   margin: 10px;
   text-transform: uppercase;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 
 /* -------------------------------------------- *
@@ -1748,7 +1707,6 @@ a.button:hover {
  */
 .price-box {
   margin: 7px 0;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 
 .price-box p {
@@ -1762,17 +1720,6 @@ a.button:hover {
 .price-box .price {
   color: #3399cc;
   font-size: 16px;
-}
-
-.price-box .price,
-.price {
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
-}
-
-.price-box .price-label {
-  color: #a0a0a0;
-  white-space: nowrap;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 
 .price-box .minimal-price-link {
@@ -1857,10 +1804,7 @@ span.weee {
 /* ============================================ *
  * Item Options
  * ============================================ */
-.item-options {
-  font-size: 14px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-}
+
 .item-options:after {
   content: '';
   display: table;
@@ -2097,7 +2041,6 @@ span.weee {
 
 .toolbar,
 .pager {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   color: #636363;
   line-height: 30px;
   font-size: 12px;
@@ -2178,7 +2121,6 @@ span.weee {
 }
 .pager .amount {
   float: left;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
   white-space: nowrap;
   margin: 0 15px 0 0;
 }
@@ -2226,7 +2168,6 @@ span.weee {
   height: 30px;
   padding: 0;
   color: #3399cc;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 
 .pages .current,
@@ -2514,7 +2455,6 @@ form .legend {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -2557,7 +2497,6 @@ li.centinel-logos div.input-box img {
 label {
   display: inline-block;
   font-size: 13px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-weight: 600;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2571,7 +2510,6 @@ span.required:after {
   content: ' *';
   color: #df280a;
   font-weight: normal;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
 }
 
@@ -2890,7 +2828,6 @@ form .form-instructions {
 .data-table th {
   background: #f4f4f4;
   text-transform: uppercase;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   line-height: 1.4;
   white-space: nowrap;
 }
@@ -2900,10 +2837,6 @@ form .form-instructions {
   border-bottom: 1px solid silver;
 }
 
-.data-table tbody td,
-.data-table tfoot td {
-  font-family: Georgia, Times, "Times New Roman", serif;
-}
 
 .data-table tfoot tr {
   background: #f4f4f4;
@@ -3012,7 +2945,6 @@ form .form-instructions {
   .linearize-table tbody td[data-rwd-label]:before {
     content: attr(data-rwd-label) ":";
     font-size: 12px;
-    font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
     padding-right: 5px;
     text-transform: uppercase;
   }
@@ -3095,7 +3027,6 @@ form .form-instructions {
   .linearize-table-large tbody td[data-rwd-label]:before {
     content: attr(data-rwd-label) ":";
     font-size: 12px;
-    font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
     padding-right: 5px;
     text-transform: uppercase;
   }
@@ -3159,89 +3090,14 @@ body {
   clear: both;
 }
 
-/* ============================================ *
- * Header
- * ============================================ */
-@media only screen and (min-width: 771px) {
-  .page-header {
-    max-width: 1260px;
-    margin: 0 auto;
-    padding: 0 30px;
-  }
 
-  .page-header-container {
-    position: relative;
-  }
-}
-.header-language-container,
-.page-header {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-}
-
-/* ============================================ *
- * Language switcher + welcome message
- * ============================================ */
-.header-language-background {
-  padding: 10px;
-  background-color: #262626;
-  text-transform: uppercase;
-}
-.header-language-background .header-language-container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.header-language-background:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.header-language-background .form-language,
-.header-language-background .currency-switcher {
-  float: left;
-  margin-right: 10px;
-}
-.header-language-background .welcome-msg {
-  float: right;
-}
-
-.page-header-container .store-language-container {
-  float: right;
-  max-width: 35%;
-  padding: 13px 15px 10px 10px;
-}
-.page-header-container .store-language-container label {
-  display: none;
-}
-.page-header-container .store-language-container select {
-  max-width: 100%;
-}
-
-@media only screen and (max-width: 479px) {
-  .page-header-container .store-language-container {
-    padding-top: 8px;
-  }
-  .page-header-container .store-language-container select {
-    font-size: 12px;
-  }
-}
-.header-language-background,
-.header-language-background a {
-  color: #e6e6e6;
-}
-
-@media only screen and (max-width: 770px) {
-  .header-language-background {
-    display: none;
-  }
-}
 /* ============================================ *
  * Logo
  * ============================================ */
 .logo {
   display: block;
   float: left;
-  width: 65%;
+  /*width: 65%;*/
   min-width: 100px;
   min-height: 44px;
   text-align: center;
@@ -3264,7 +3120,7 @@ body {
 @media only screen and (min-width: 771px) {
   .logo {
     max-width: 300px;
-    min-height: 90px;
+    min-height: 78px;
   }
   .logo .small {
     display: none;
@@ -3458,9 +3314,9 @@ a.skip-link {
 }
 @media only screen and (min-width: 771px) {
   #header-nav {
-    display: block;
-    /* Force visibility */
-    border-bottom: 1px solid #ededed;
+   display: block;
+   text-align: right;
+   padding: 10px;
   }
 }
 /* ============================================ *
@@ -3481,7 +3337,7 @@ a.skip-link {
   display: block;
   color: #636363;
   line-height: 30px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 .nav-primary li {
   position: relative;
@@ -3564,7 +3420,7 @@ a.skip-link {
     /* Level 1+ */
   }
   .nav-primary a.level0 {
-    padding: 0 25px;
+    padding: 0 10px;
   }
   .nav-primary li.level0,
   .nav-primary a.level0 {
@@ -3575,7 +3431,7 @@ a.skip-link {
   }
   .nav-primary a:hover,
   .nav-primary li:hover > a {
-    color: #3399cc;
+    color: #457103;
   }
   .nav-primary .menu-active {
     z-index: 200;
@@ -3681,7 +3537,7 @@ a.skip-link {
   width: 100%;
   height: 40px;
   padding-right: 40px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 #search_mini_form .search-button {
@@ -3831,7 +3687,7 @@ a.skip-link {
   font-size: 11px;
   line-height: 22px;
   text-align: center;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .skip-link.skip-active .count {
@@ -3912,7 +3768,6 @@ a.skip-link {
 /* Subtotal */
 .cart-menu .subtotal {
   padding: 0 15px 15px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 24px;
   line-height: 1.2;
 }
@@ -3967,17 +3822,24 @@ a.skip-link {
  */
 .footer,
 .footer button {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .footer {
   clear: both;
   width: 100%;
-  border-top: 1px solid #cccccc;
   padding-top: 30px;
-  /* -------------------------------------------- *
-   * Social icons
-   */
+ border-top: 5px solid #336600;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000200+0,121513+50,090e0a+100 */
+    background: #000200; /* Old browsers */
+    background: -moz-linear-gradient(top,  #000200 0%, #121513 50%, #090e0a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #000200 0%,#121513 50%,#090e0a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #000200 0%,#121513 50%,#090e0a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000200', endColorstr='#090e0a',GradientType=0 ); /* IE6-9 */
+
+    /* -------------------------------------------- *
+     * Social icons
+     */
 }
 @media only screen and (max-width: 479px) {
   .footer {
@@ -3993,7 +3855,7 @@ a.skip-link {
 }
 .footer .block-title,
 .footer address {
-  color: #3399cc;
+  color: #fff;
 }
 .footer .links {
   float: left;
@@ -4007,7 +3869,7 @@ a.skip-link {
   padding: 4px 0;
 }
 .footer .links a {
-  color: #636363;
+  color: #fff;
 }
 .footer .links a:hover {
   color: #3399cc;
@@ -4106,30 +3968,14 @@ a.skip-link {
   line-height: 17px;
   float: left;
 }
-.footer .bugs,
-.footer address {
+.footer .address-footer {
   clear: both;
-}
-.footer .bugs {
-  display: none;
-}
-.footer .form-language,
-.footer .currency-switcher,
-.footer .store-switcher {
-  clear: both;
-  margin-bottom: 10px;
-}
-.footer .form-language,
-.footer .currency-switcher {
-  display: none;
+  background-color: #333333;
 }
 .footer address {
-  border-top: 1px solid #cccccc;
-  text-align: center;
-  width: 100%;
-  font-size: 11px;
-  margin-top: 30px;
-  padding: 30px 0;
+  font-size: 15px;
+    width: 60%;
+    float: left;
 }
 @media only screen and (max-width: 1199px) {
   .footer .links {
@@ -4199,7 +4045,6 @@ p.product-name {
   margin: 0;
   margin-bottom: 0.5em;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -4207,7 +4052,6 @@ p.product-name {
   text-rendering: optimizeLegibility;
   text-transform: uppercase;
   font-size: 13px;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -4232,7 +4076,6 @@ p.product-name a:hover {
   text-transform: uppercase;
   margin-bottom: 5px;
   font-size: 14px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 .products-grid .product-name a,
 .products-list .product-name a {
@@ -4480,6 +4323,7 @@ p.product-name a:hover {
   .products-grid--max-6-col > li:nth-child(6n) {
     margin-right: 0;
   }
+
 }
 /* ============================================ *
  * Product List
@@ -4655,7 +4499,6 @@ p.product-name a:hover {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -4702,7 +4545,6 @@ p.product-name a:hover {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -4771,6 +4613,7 @@ p.product-name a:hover {
   .block-layered-nav .block-content > dl > dt:after {
     display: none;
   }
+    .section_row .circle-box{ width: 25%;}
 }
 @media only screen and (max-width: 770px) {
   .sidebar .block.block-layered-nav {
@@ -4892,13 +4735,13 @@ p.product-name a:hover {
     text-decoration: none;
     background: #ececec;
   }
+  .section_row .circle-box{ width: 50%;}
 }
 .block-layered-nav .currently .block-subtitle {
   display: block;
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -5432,7 +5275,6 @@ p.product-name a:hover {
     margin: 0;
     margin-bottom: 10px;
     color: #636363;
-    font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
     font-style: normal;
@@ -5588,28 +5430,6 @@ p.product-name a:hover {
     margin-bottom: 15px;
   }
 }
-
-.grouped-items-table .name-wrapper {
-  color: #3399cc;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-}
-.grouped-items-table .qty-wrapper {
-  padding-top: 7px;
-}
-.grouped-items-table .qty-label {
-  margin-left: 7px;
-}
-.grouped-items-table td {
-  padding: 4px;
-}
-.grouped-items-table td:last-child {
-  width: 30%;
-  text-align: left;
-}
-.grouped-items-table .price-box {
-  text-align: right;
-}
-
 /* -------------------------------------------- *
  * Catalog - Product Options
  */
@@ -5819,7 +5639,6 @@ p.product-name a:hover {
   margin: 0;
   margin-bottom: 0.5em;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -5920,6 +5739,7 @@ p.product-name a:hover {
     left: auto !important;
     right: 10px !important;
   }
+
 }
 @media only screen and (max-width: 770px) {
   .map-popup {
@@ -6304,9 +6124,7 @@ p.product-name a:hover {
     width: 100%;
   }
 }
-.cart-table {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-}
+
 .cart-table th,
 .cart-table td,
 .cart-table tbody td {
@@ -6323,7 +6141,6 @@ p.product-name a:hover {
 .cart-table tbody td {
   background-color: transparent;
   padding: 10px 5px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 .cart-table .product-cart-info,
 .cart-table .product-cart-actions {
@@ -6344,7 +6161,6 @@ p.product-name a:hover {
   font-size: 9px;
   padding: 0 5px;
   text-transform: uppercase;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 .cart-table .product-cart-image .cart-links,
 .cart-table .product-cart-info .btn-remove,
@@ -6363,7 +6179,6 @@ p.product-name a:hover {
   display: none;
 }
 .cart-table .product-cart-sku {
-  font-family: Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   font-size: 12px;
   margin: 5px 0 12px;
@@ -6495,7 +6310,6 @@ p.product-name a:hover {
   .cart-table td[data-rwd-label]:before {
     content: attr(data-rwd-label) ":";
     font-size: 12px;
-    font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
     padding-right: 5px;
     text-transform: uppercase;
   }
@@ -6576,7 +6390,6 @@ p.product-name a:hover {
   .cart-table .product-cart-price:before {
     font-weight: 500;
     font-size: 15px;
-    font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
   }
   .cart-table .cart-footer-actions {
     text-align: center;
@@ -6652,7 +6465,6 @@ p.product-name a:hover {
   margin-top: 4px;
 }
 .shipping .form-list label {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
@@ -6666,13 +6478,11 @@ p.product-name a:hover {
   margin-bottom: 10px;
 }
 .shipping .sp-methods label {
-  font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 12px;
   font-style: italic;
   min-width: 100px;
 }
 .shipping .sp-methods label span {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
 }
@@ -6711,7 +6521,6 @@ p.product-name a:hover {
   clear: both;
 }
 .cart .cart-totals table {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -6739,7 +6548,6 @@ p.product-name a:hover {
 }
 .cart .cart-totals table tfoot strong span,
 .cart .cart-totals table tfoot span.price {
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 .cart .cart-totals table tfoot strong {
   font-weight: 400;
@@ -6772,7 +6580,6 @@ p.product-name a:hover {
 }
 #discount-coupon-form label,
 .cart .giftcard label {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   text-align: left;
@@ -7196,7 +7003,6 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -7214,7 +7020,6 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 .block-progress dd {
   padding-left: 15px;
   margin-bottom: 10px;
-  font-family: Georgia, Times, "Times New Roman", serif;
   font-style: italic;
 }
 .block-progress dd address {
@@ -7227,7 +7032,6 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   padding: 0;
   margin: 0 0 3px 0;
   color: #636363;
-  font-family: Georgia, Times, "Times New Roman", serif;
   text-transform: none;
   font-style: italic;
   float: left;
@@ -7733,7 +7537,6 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 
 .opc #opc-login p:not(.required) {
   font-style: italic;
-  font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 13px;
   color: #a0a0a0;
 }
@@ -7754,9 +7557,6 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 }
 .remember-me-popup.show {
   display: block;
-}
-.remember-me-popup p {
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 .remember-me-popup .remember-me-popup-close {
   position: absolute;
@@ -7846,7 +7646,6 @@ body.customer-account .data-table {
   margin-top: 5px;
 }
 body.customer-account .data-table td a {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   text-transform: uppercase;
   font-style: normal;
   font-size: 13px;
@@ -7933,11 +7732,7 @@ body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-
   border-bottom: 1px solid #cccccc;
   margin-bottom: 45px;
 }
-.dashboard .box-account p,
-.dashboard .box-account address {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-style: italic;
-}
+
 .dashboard .col2-set .col-1,
 .dashboard .col2-set .col-2 {
   padding-right: 12.09677%;
@@ -7987,7 +7782,6 @@ body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-
 }
 .dashboard .box-reviews li .details .ratings strong {
   float: left;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 13px;
   margin-right: 5px;
 }
@@ -7999,9 +7793,7 @@ body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-
 /* ============================================ *
  * Address Book
  * ============================================ */
-.my-account .addresses-list {
-  font-family: Georgia, Times, "Times New Roman", serif;
-}
+
 .my-account .addresses-list .col-1,
 .my-account .addresses-list .col-2 {
   padding-bottom: 0;
@@ -8058,11 +7850,6 @@ body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-
   margin-left: 0;
 }
 
-.order-date {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  text-transform: uppercase;
-}
-
 .order-info-box {
   margin-bottom: 40px;
   margin-top: 20px;
@@ -8091,7 +7878,6 @@ body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-
 }
 .order-info-box .box-title h2 {
   font-size: 14px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-weight: bold;
   line-height: 1.5;
 }
@@ -8100,23 +7886,13 @@ body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-
 }
 .order-info-box .box-content {
   float: left;
-  font-family: Georgia, Times, "Times New Roman", serif;
 }
-.order-info-box .box-content td,
-.order-info-box .box-content th {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  line-height: 1.3;
-}
+
 .order-info-box .box-content th {
   padding-top: 10px;
 }
 .order-info-box .box-content td {
   padding-left: 15px;
-}
-.order-info-box .box-content strong {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  font-weight: normal;
-  text-transform: uppercase;
 }
 
 #my-orders-table .option-label {
@@ -8228,9 +8004,6 @@ ol#cart-sidebar-reorder p.product-name {
   }
   .dashboard .page-title h1 {
     margin-top: 0;
-  }
-  .dashboard .welcome-msg {
-    font-family: Georgia, Times, "Times New Roman", serif;
   }
   .dashboard .welcome-msg .hello {
     font-style: italic;
@@ -8526,7 +8299,6 @@ div.paypal-logo span > img {
   margin-bottom: 0;
 }
 #customer-reviews .review-heading .pager .count-container .limiter label {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 10px;
   text-transform: uppercase;
 }
@@ -8542,7 +8314,6 @@ div.paypal-logo span > img {
   color: #636363;
 }
 #customer-reviews h3 {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   text-transform: uppercase;
@@ -8556,7 +8327,6 @@ div.paypal-logo span > img {
 }
 #customer-reviews .fieldset h4 {
   border-bottom: 1px solid #cccccc;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   padding-bottom: 5px;
@@ -8566,7 +8336,6 @@ div.paypal-logo span > img {
   display: none;
 }
 #customer-reviews .fieldset .form-list {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   margin: 10px 0;
@@ -8601,7 +8370,6 @@ div.paypal-logo span > img {
   width: 470px;
 }
 #customer-reviews dl {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   margin-bottom: 10px;
@@ -8611,12 +8379,10 @@ div.paypal-logo span > img {
   text-transform: uppercase;
 }
 #customer-reviews dl dd {
-  font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 14px;
   margin: 10px 0;
 }
 #customer-reviews dl dd .ratings-table {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
   width: 100%;
 }
@@ -8632,7 +8398,6 @@ div.paypal-logo span > img {
 }
 #customer-reviews dl dd .review-meta {
   color: #3399cc;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 10px;
   font-weight: normal;
   text-transform: uppercase;
@@ -8682,7 +8447,6 @@ div.paypal-logo span > img {
  * Ratings - Global
  * ============================================ */
 .ratings-table {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -8797,170 +8561,6 @@ div.paypal-logo span > img {
     max-width: 100%;
   }
 }
-/* ============================================ *
- * Slideshow
- * ============================================ */
-.slideshow-container {
-  position: relative;
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  border: 1px solid #ededed;
-}
-.slideshow-container .slideshow {
-  width: 100%;
-  padding: 0;
-  position: relative;
-  margin: 0;
-  border: 10px solid #FFFFFF;
-}
-.slideshow-container .slideshow > li {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0;
-  display: block;
-  margin: 0;
-}
-.slideshow-container .slideshow > li:first-child {
-  position: static;
-  z-index: 100;
-}
-.slideshow-container .slideshow > li img {
-  max-width: 100%;
-  width: 100%;
-}
-
-.slideshow-pager {
-  text-align: center;
-  width: 100%;
-  z-index: 115;
-  position: absolute;
-  bottom: 0px;
-  top: auto;
-  overflow: hidden;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-.slideshow-pager span {
-  font-family: arial;
-  width: 44px;
-  height: 44px;
-  display: inline-block;
-  color: #DDDDDD;
-  cursor: pointer;
-}
-.slideshow-pager span:before {
-  content: '';
-  display: block;
-  width: 16px;
-  height: 16px;
-  left: 50%;
-  top: 50%;
-  margin-left: -8px;
-  margin-top: -8px;
-  border-radius: 1px;
-  background-color: #FFFFFF;
-  position: relative;
-}
-.slideshow-pager span:hover:before {
-  background-color: #2e8ab8;
-}
-.slideshow-pager span.cycle-pager-active:before {
-  background-color: #297aa3;
-}
-.slideshow-pager > * {
-  cursor: pointer;
-}
-
-.slideshow-prev,
-.slideshow-next {
-  position: absolute;
-  top: 0;
-  width: 15%;
-  max-width: 80px;
-  height: 100%;
-  opacity: 0.6;
-  z-index: 110;
-  cursor: pointer;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-.slideshow-prev:before,
-.slideshow-next:before {
-  content: '';
-  width: 0;
-  height: 0;
-  font-size: 0;
-  position: absolute;
-  border-style: solid;
-  display: block;
-  top: 50%;
-  margin-top: -15px;
-}
-.slideshow-prev:hover,
-.slideshow-next:hover {
-  opacity: 1;
-}
-.slideshow-prev.disabled,
-.slideshow-next.disabled {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
-  cursor: default;
-}
-
-.slideshow-prev {
-  left: 8px;
-}
-.slideshow-prev:before {
-  border-width: 15px 15px 15px 0;
-  border-color: transparent #FFFFFF transparent transparent;
-  top: 50%;
-  left: 10px;
-}
-.slideshow-prev:hover:before {
-  border-color: transparent #2e8ab8 transparent transparent;
-}
-
-.slideshow-next {
-  right: 8px;
-}
-.slideshow-next:before {
-  border-width: 15px 0 15px 15px;
-  border-color: transparent transparent transparent #FFFFFF;
-  top: 50%;
-  right: 10px;
-}
-.slideshow-next:hover:before {
-  border-color: transparent transparent transparent #2e8ab8;
-}
-
-.cycle-caption {
-  position: absolute;
-  color: white;
-  bottom: 15px;
-  right: 15px;
-  z-index: 110;
-}
-
-.cycle-overlay {
-  font-family: tahoma, arial;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  z-index: 120;
-  background: black;
-  color: white;
-  padding: 15px;
-  opacity: .5;
-}
 
 /* ============================================ *
  * Wishlist
@@ -8969,7 +8569,6 @@ div.paypal-logo span > img {
   text-align: center;
 }
 #wishlist-table.clean-table {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   width: 100%;
@@ -8982,13 +8581,11 @@ div.paypal-logo span > img {
   vertical-align: top;
 }
 #wishlist-table.clean-table thead th {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
   text-transform: uppercase;
 }
 #wishlist-table .product-name {
   font-size: 16px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   margin-bottom: 0;
   text-transform: uppercase;
 }
@@ -8997,7 +8594,6 @@ div.paypal-logo span > img {
 }
 #wishlist-table .wishlist-sku {
   font-size: 11px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   margin: 5px 0;
 }
 #wishlist-table textarea {
@@ -9005,7 +8601,6 @@ div.paypal-logo span > img {
   width: 100%;
   height: 45px;
   font-size: 11px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 #wishlist-table textarea::-webkit-input-placeholder {
   text-transform: uppercase;
@@ -9072,10 +8667,7 @@ div.paypal-logo span > img {
 #wishlist-table td button {
   white-space: normal;
 }
-#wishlist-table .price-box {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  font-size: 12px;
-}
+
 #wishlist-table .price-box .price {
   color: #636363;
 }
@@ -9308,7 +8900,6 @@ div.paypal-logo span > img {
 }
 .header-minicart .block-subtitle {
   color: #50A4CF;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 10px;
   font-weight: bold;
   line-height: 1.4;
@@ -9429,7 +9020,7 @@ div.paypal-logo span > img {
 }
 .header-minicart #minicart-success-message {
   text-align: center;
-  color: green;
+  color: #457103;
   display: none;
 }
 .header-minicart .jcarousel-control-prev,
@@ -9602,7 +9193,6 @@ div.paypal-logo span > img {
 .product-review .product-img-box p.label {
   border-bottom: 1px solid #cccccc;
   font-size: 16px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   margin-top: 20px;
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -9615,12 +9205,9 @@ div.paypal-logo span > img {
   color: #3399CC;
   font-size: 16px;
   font-weight: 600;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   padding-bottom: 10px;
 }
-.product-review .ratings-table {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-}
+
 .product-review .ratings-table th {
   padding-right: 10px;
 }
@@ -9634,14 +9221,12 @@ div.paypal-logo span > img {
   border-bottom: 1px solid #cccccc;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   margin-top: 20px;
   padding: 10px 0;
   text-transform: uppercase;
 }
 .product-review .ratings-description dd {
   color: #737373;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 13px;
 }
 
@@ -9681,7 +9266,6 @@ div.paypal-logo span > img {
 .cms-page-view .std p,
 .cms-no-route .std p {
   color: #636363;
-  font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 14px;
   font-style: italic;
   line-height: 24px;
@@ -9697,7 +9281,6 @@ div.paypal-logo span > img {
 .cms-page-view .std li,
 .cms-no-route .std li {
   color: #636363;
-  font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 14px;
   font-style: italic;
   line-height: 24px;
@@ -9729,7 +9312,6 @@ div.paypal-logo span > img {
   list-style: none;
   margin-left: 0;
   font-style: normal;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 
 #accordion .toggle-tabs {
@@ -9739,7 +9321,6 @@ div.paypal-logo span > img {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -9842,7 +9423,6 @@ div.paypal-logo span > img {
  * ============================================ */
 .price-box .minimal-price-link .label {
   color: #cf5050;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -10390,7 +9970,6 @@ body[class*="checkout-multishipping-"] .checkout-progress > li {
   border-bottom: 1px solid #cccccc;
   border-right: 1px solid #cccccc;
   margin-bottom: 10px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 body[class*="checkout-multishipping-"] .checkout-progress > li.active {
   background-color: #dddddd;

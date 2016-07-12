@@ -71,7 +71,6 @@
 
                 <!-- Add stylesheets with no media queries for use in IE 8 and below -->
                 <action method="addItem"><type>skin_css</type><name>css/styles-ie8.css</name><params/><if><![CDATA[ (lte IE 8) & (!IEMobile)]]></if></action>
-                <action method="addItem"><type>skin_css</type><name>css/farm-ie8.css</name><params/><if><![CDATA[ (lte IE 8) & (!IEMobile)]]></if></action>
 
                 <!-- Add stylesheets with media queries for use by modern browsers -->
                 <action method="addItem"><type>skin_css</type><name>css/styles.css</name><params/><if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if></action>
@@ -132,10 +131,6 @@
             </block>
 
             <block type="page/html_footer" name="footer" as="footer" template="page/html/footer.phtml">
-                <block type="page/html_wrapper" name="bottom.container" as="bottomContainer" translate="label">
-                    <label>Page Footer</label>
-                    <action method="setElementClass"><value>bottom-container</value></action>
-                </block>
                 <block type="page/switch" name="store_switcher" as="store_switcher" after="*" template="page/switch/stores.phtml"/>
                 <block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links.phtml">
                     <action method="setTitle"><title>Quick Links</title></action>
@@ -143,10 +138,10 @@
                 <block type="page/template_links" name="footer_links2" as="footer_links2" template="page/template/links.phtml">
                     <action method="setTitle"><title>Account</title></action>
                 </block>
-                <!-- This static block can be created and populated in admin. The footer_links cms block can be used as a starting point. -->
-                <!--<block type="cms/block" name="footer_social_links">
-                    <action method="setBlockId"><block_id>footer_social_links</block_id></action>
-                </block>-->
+                <block type="page/html_wrapper" name="bottom.container" as="bottomContainer" translate="label">
+                    <label>Page Footer</label>
+                    <action method="setElementClass"><value>bottom-container</value></action>
+                </block>
             </block>
 
             <block type="core/text_list" name="before_body_end" as="before_body_end" translate="label">

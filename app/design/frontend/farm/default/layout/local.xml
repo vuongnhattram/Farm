@@ -5,5 +5,13 @@
         <reference name="header">
             <block type="cms/block" name="farm-header-info"><action method="setBlockId"><block_id>farm-header-info</block_id></action></block>
         </reference>
+        <reference name="catalog.topnav">
+            <block type="cms/block" name="menu-link"><action method="setBlockId"><block_id>menu-link</block_id></action></block>
+        </reference>
     </default>
+    <cms_index_index>
+        <reference name="content">
+            <block type="core/template" name="customer-list" template="customer/form/list.user.phtml"/>
+        </reference>
+    </cms_index_index>
 </layout>

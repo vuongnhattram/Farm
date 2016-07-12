@@ -36,7 +36,10 @@
 <?php if($_menu): ?>
     <nav id="nav">
         <ol class="nav-primary">
+            <li class=" level0 home <?php if($this->getUrl('') == $this->getUrl('*/*/*', array('_current'=>true, '_use_rewrite'=>true))) : ?> active <?php endif ;?>"><a  class="level0" href="<?php echo $this->getUrl('')?>"><?php echo $this->__('Home') ?></a></li>
+            <li  class="level0"><a class="level0" href="#"><?php echo $this ->__('Giới Thiệu')?></a></li>
             <?php echo $_menu ?>
+            <?php echo $this->getChildHtml('menu-link'); ?>
         </ol>
     </nav>
 <?php endif ?>

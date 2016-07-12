@@ -24,9 +24,20 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<div class="footer-container">
-    <div class="footer">
+<div class="footer">
+    <div class="footer-container">
         <?php echo $this->getChildHtml() ?>
-        <address class="copyright"><?php echo $this->getCopyright() ?></address>
+    </div>
+    <div class="address-footer">
+        <div class="footer-container">
+            <address class="copyright"><?php echo $this->getCopyright() ?></address>
+            <div class="footer-category">
+                <ul>
+                    <li><a><?php echo $this->__('Chuyện Nông Trại');?></a><i></i></li>
+                    <li><a><?php echo $this->__('Sản Phẩm');?></a><i></i></li>
+                    <li><a><?php echo $this->__('Liên Hệ');?></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
