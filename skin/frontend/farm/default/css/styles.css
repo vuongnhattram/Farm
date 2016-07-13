@@ -77,7 +77,7 @@ audio:not([controls]) {
  *    user zoom.
  */
 html {
-  font-family: sans-serif;
+  font-family: Raleway,sans-serif, Arial;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
@@ -489,7 +489,7 @@ input,
 select,
 table,
 textarea {
-  font-family: Arial, sans-serif;
+  font-family:Raleway,sans-serif, Arial;
   color: #636363;
   font-size: 14px;
   line-height: 1.5;
@@ -518,7 +518,6 @@ ul {
 h1, .h1 {
   margin: 0;
   margin-bottom: 0.7em;
-  color: #3399cc;
   font-size: 28px;
   font-weight: 400;
   font-style: normal;
@@ -605,23 +604,6 @@ h6, .h6 {
 .availability-only {
   color: #df280a;
   margin-bottom: 10px;
-}
-
-/* -------------------------------------------- *
- * Page Titles
- */
-.page-title h1,
-.page-title h2,
-.product-name h1,
-.product-name .h1 {
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: 600;
-  color: #636363;
-  border-bottom: 1px solid #ededed;
-  padding-bottom: 3px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
 }
 
 /* -------------------------------------------- *
@@ -888,7 +870,7 @@ body:not(.customer-account) .block:first-child .block-title {
 .cart-table .product-cart-actions .button,
 #co-shipping-method-form .buttons-set .button,
 .footer .button {
-  background: #3399cc;
+  background: #5aa320;
   display: inline-block;
   padding: 7px 15px;
   border: 0;
@@ -905,7 +887,7 @@ body:not(.customer-account) .block:first-child .block-title {
 .cart-table .product-cart-actions .button:hover,
 #co-shipping-method-form .buttons-set .button:hover,
 .footer .button:hover {
-  background: #2e8ab8;
+  background: #000;
   cursor: pointer;
 }
 .button:active,
@@ -1257,7 +1239,7 @@ a.button:hover {
  * Container
  */
 .main-container,.container,
-.footer-container {
+.footer-container,.cms-index-index .widget-new-products {
   position: relative;
   max-width: 1170px;
   margin: 0 auto;
@@ -1718,7 +1700,7 @@ a.button:hover {
 }
 
 .price-box .price {
-  color: #3399cc;
+  color: #5aa320;
   font-size: 16px;
 }
 
@@ -1941,9 +1923,6 @@ span.weee {
     border-color: #ededed;
   }
 }
-.no-touch .product-image:hover {
-  border-color: #3399cc;
-}
 
 /* -------------------------------------------- *
  * Ratings
@@ -1996,11 +1975,6 @@ span.weee {
   list-style: disc outside;
   margin-bottom: 1.5em;
 }
-
-.std ul li {
-  margin-left: 2em;
-}
-
 .std .note {
   color: #a0a0a0;
   font-size: 13px;
@@ -3337,7 +3311,7 @@ a.skip-link {
   display: block;
   color: #636363;
   line-height: 30px;
-  font-family: Arial, sans-serif;
+  font-family: Raleway,sans-serif, Arial;
 }
 .nav-primary li {
   position: relative;
@@ -3537,7 +3511,7 @@ a.skip-link {
   width: 100%;
   height: 40px;
   padding-right: 40px;
-  font-family: Arial, sans-serif;
+  font-family: Raleway,sans-serif, Arial;
 }
 
 #search_mini_form .search-button {
@@ -3687,7 +3661,7 @@ a.skip-link {
   font-size: 11px;
   line-height: 22px;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: Raleway,sans-serif, Arial;
 }
 
 .skip-link.skip-active .count {
@@ -3822,7 +3796,7 @@ a.skip-link {
  */
 .footer,
 .footer button {
-  font-family: Arial, sans-serif;
+  font-family: Raleway,sans-serif, Arial;
 }
 
 .footer {
@@ -4067,7 +4041,7 @@ h3.product-name a:hover,
 h4.product-name a:hover,
 h5.product-name a:hover,
 p.product-name a:hover {
-  color: #3399cc;
+  color: #457103;
   text-decoration: none;
 }
 
@@ -4097,7 +4071,7 @@ p.product-name a:hover {
 
 .products-grid > li {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .products-grid > li:after {
@@ -4161,6 +4135,7 @@ p.product-name a:hover {
   float: left;
   width: 47.72727%;
   margin-right: 4.54545%;
+    list-style: none;
 }
 
 .products-grid > li:nth-child(odd) {
@@ -4922,6 +4897,7 @@ p.product-name a:hover {
   .product-view .product-shop .price-box .price-including-tax span {
     display: block;
   }
+
 }
 .product-img-box {
   width: 50%;
