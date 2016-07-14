@@ -21,6 +21,17 @@
     <cms_index_index>
         <reference name="content">
             <block type="core/template" name="customer-list" template="customer/form/list.user.phtml"/>
+            <block type="cms/block" name="form-the-blog">
+                <action method="setBlockId">
+                    <block_id>form-the-blog</block_id>
+                </action>
+            </block>
+            <block type="cms/block" name="nguoi-dung">
+                <action method="setBlockId">
+                    <block_id>nguoi-dung</block_id>
+                </action>
+            </block>
+
         </reference>
     </cms_index_index>
     <catalog_category_default>

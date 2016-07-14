@@ -200,12 +200,12 @@ body.html{ font-family: Arial, sans-serif;}
 .section_row{margin-top: 35px;}
 .section_row h2{border-bottom: 2px solid #1f711d;    text-transform: uppercase;display: inline-block;padding: 0 15px 15px;width: 100%;color: #238121;font-size: 26px;font-weight: bold; text-align: center;}
 .section_row h5{text-align: center;font-size: 16px;margin: 10px 0 30px;}
-.section_row .circle-box{float: left;padding: 0 15px;text-align: center;}
+.section_row .circle-box{float: left;padding: 0 15px;text-align: center;margin: 0 0 40px;}
 .section_row .circle-box img{  border: 2px solid #3c6302;margin: 10px 0;  border-radius: 50%;max-width: 100%;display: inline-block;}
 .cms-index-index .col-main{/*background: url('../images/port-bg.jpg') repeat*/;margin: 0px 0 0 0;}
 .fancy_list_wrapper .fancy_list_item{width: 30%;float: left;margin:0 calc(10%/6) 20px;}
 .fancy_list_wrapper .fancy_list_item img{max-width: 100%; margin: 0 auto;}
-.fancy_list_wrapper{margin-bottom: 30px;display: inline-block; width: 100%;}
+.fancy_list_wrapper{display: inline-block; width: 100%;}
 .fancy_categories .icon-elegant{color: #8d8d8d;margin-right: 5px;}
 .fancy_categories a{margin-right: 5px;color: #636363}
 .fancy_list_wrapper h4 {margin-top: 20px;}

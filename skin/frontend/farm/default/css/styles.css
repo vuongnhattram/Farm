@@ -140,7 +140,7 @@ strong {
  * Addresses styling not present in Safari 5 and Chrome.
  */
 dfn {
-  font-style: italic;
+  font-style: normal;
 }
 
 /*
@@ -1974,6 +1974,7 @@ span.weee {
 .std ul {
   list-style: disc outside;
   margin-bottom: 1.5em;
+  padding: 0px 0 1px 50px;
 }
 .std .note {
   color: #a0a0a0;
@@ -9243,12 +9244,12 @@ div.paypal-logo span > img {
 .cms-no-route .std p {
   color: #636363;
   font-size: 14px;
-  font-style: italic;
+  font-style: normal;
   line-height: 24px;
 }
 .cms-page-view .std h1,
 .cms-no-route .std h1 {
-  color: #3399cc;
+  color: #5aa320;
 }
 .cms-page-view .std h2,
 .cms-no-route .std h2 {
@@ -9258,7 +9259,7 @@ div.paypal-logo span > img {
 .cms-no-route .std li {
   color: #636363;
   font-size: 14px;
-  font-style: italic;
+  font-style: normal;
   line-height: 24px;
 }
 .cms-page-view .col-left:after,
