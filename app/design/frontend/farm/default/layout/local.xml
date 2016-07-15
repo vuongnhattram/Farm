@@ -37,4 +37,19 @@
     <catalog_category_default>
         <remove name="breadcrumbs"/>
     </catalog_category_default>
+    <checkout_cart_index>
+
+    <remove name="checkout.cart.coupon"/>
+
+    </checkout_cart_index>
+
+
+        <checkout_cart_index>
+            <reference name="checkout.cart.form.before">
+                <block type="cms/block" name="top-product-right"  >
+                    <action method="setBlockId"><block_id>product-farm-right-page</block_id></action>
+                </block>
+            </reference>
+        </checkout_cart_index>
+
 </layout>

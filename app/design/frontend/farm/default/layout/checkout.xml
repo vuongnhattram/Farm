@@ -61,6 +61,7 @@ Default layout, loads most of the pages
         </reference>
 
         <reference name="right">
+
             <!--<block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml" before="-">-->
                 <!--<action method="addItemRender"><type>simple</type><block>checkout/cart_item_renderer</block><template>checkout/cart/sidebar/default.phtml</template></action>-->
                 <!--<action method="addItemRender"><type>grouped</type><block>checkout/cart_item_renderer_grouped</block><template>checkout/cart/sidebar/default.phtml</template></action>-->
@@ -108,11 +109,12 @@ Default layout, loads most of the pages
                     <block type="checkout/multishipping_link" name="checkout.cart.methods.multishipping" template="checkout/multishipping/link.phtml"/>
                 </block>
 
-                <block type="checkout/cart_coupon" name="checkout.cart.coupon" as="coupon" template="checkout/cart/coupon.phtml"/>
+              <!--  <block type="checkout/cart_coupon" name="checkout.cart.coupon" as="coupon" template="checkout/cart/coupon.phtml"/>-->
                 <block type="core/text_list" name="checkout.cart.extra" translate="label">
                     <label>Checkout Forms Extra</label>
                 </block>
-                <block type="checkout/cart_shipping" name="checkout.cart.shipping" as="shipping" template="checkout/cart/shipping.phtml"/>
+
+               <!-- <block type="checkout/cart_shipping" name="checkout.cart.shipping" as="shipping" template="checkout/cart/shipping.phtml"/>-->
                 <block type="core/text_list" name="checkout.cart.widget" as="checkout_cart_widget" translate="label">
                     <label>Shopping Cart Items After</label>
                 </block>

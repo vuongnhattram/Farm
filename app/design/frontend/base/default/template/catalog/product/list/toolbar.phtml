@@ -59,21 +59,7 @@
 
     <?php if( $this->isExpanded() ): ?>
     <div class="sorter">
-        <?php if( $this->isEnabledViewSwitcher() ): ?>
-        <p class="view-mode">
-            <?php $_modes = $this->getModes(); ?>
-            <?php if($_modes && count($_modes)>1): ?>
-            <label><?php echo $this->__('View as') ?>:</label>
-            <?php foreach ($this->getModes() as $_code=>$_label): ?>
-                <?php if($this->isModeActive($_code)): ?>
-                    <strong title="<?php echo $_label ?>" class="<?php echo strtolower($_code); ?>"><?php echo $_label ?></strong>&nbsp;
-                <?php else: ?>
-                    <a href="<?php echo $this->getModeUrl($_code) ?>" title="<?php echo $_label ?>" class="<?php echo strtolower($_code); ?>"><?php echo $_label ?></a>&nbsp;
-                <?php endif; ?>
-            <?php endforeach; ?>
-            <?php endif; ?>
-        </p>
-        <?php endif; ?>
+
     
         <div class="sort-by">
             <label><?php echo $this->__('Sort By') ?></label>

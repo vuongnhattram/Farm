@@ -90,6 +90,7 @@ html {
  */
 body {
   margin: 0;
+
 }
 
 /* ==========================================================================
@@ -524,6 +525,7 @@ h1, .h1 {
   line-height: 1.2;
   text-rendering: optimizeLegibility;
   text-transform: uppercase;
+  color:#5aa320;
 }
 
 h2, .h2 {
@@ -944,15 +946,16 @@ a.button:hover {
 .button2 span span {
   line-height: 30px;
   height: 30px;
-  text-decoration: underline;
-  text-transform: uppercase;
+  /*text-decoration: underline;
+  text-transform: uppercase;*/
   display: inline-block;
-  color: #3399cc;
+  color: #212121;
 }
 .button2 span:hover,
 .button2 span span:hover {
   text-decoration: none;
-  color: #246b8f;
+  color: #5aa320;
+  font-weight:bold;
 }
 
 @media only screen and (max-width: 770px) {
@@ -1092,14 +1095,15 @@ a.button:hover {
 }
 
 .breadcrumbs li {
-  float: left;
+  float: right;
   font-size: 12px;
   text-transform: uppercase;
 }
 
 .breadcrumbs a {
-  float: left;
+  float: right;
   color: #636363;
+  text-transform: lowercase;
 }
 
 .breadcrumbs a:hover {
@@ -1108,11 +1112,11 @@ a.button:hover {
 
 .breadcrumbs strong {
   color: #636363;
-  font-weight: normal;
+  font-weight: normal;  text-transform: lowercase;
 }
 
 .breadcrumbs span {
-  float: left;
+  float: right;
   padding: 0 7px;
 }
 
@@ -1301,6 +1305,7 @@ a.button:hover {
   float: none;
   width: auto;
   padding: 0;
+  min-height: 400px;
   /* Remove the 15px padding */
 }
 
@@ -1526,9 +1531,9 @@ a.button:hover {
 }
 
 .messages .error-msg li {
-  color: black;
+  color: #636363;
   border-left: 5px solid #df280a;
-  background-color: #faebe7;
+ /* background-color: #f5841f;*/
 }
 
 .messages .error-msg li:before {
@@ -1915,7 +1920,7 @@ span.weee {
 .no-touch .product-img-box .product-image:not(.zoom-available):hover {
   position: relative;
   display: block;
-  border: 1px solid #ededed;
+  /*border: 1px solid #ededed;*/
 }
 
 @media only screen and (max-width: 770px) {
@@ -2802,7 +2807,8 @@ form .form-instructions {
 
 .data-table th {
   background: #f4f4f4;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight:bold;
   line-height: 1.4;
   white-space: nowrap;
 }
@@ -4025,7 +4031,7 @@ p.product-name {
   font-style: normal;
   line-height: 1.2;
   text-rendering: optimizeLegibility;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.4;
@@ -4035,7 +4041,7 @@ h3.product-name a,
 h4.product-name a,
 h5.product-name a,
 p.product-name a {
-  color: #636363;
+  color: #212121;
 }
 h2.product-name a:hover,
 h3.product-name a:hover,
@@ -4043,6 +4049,7 @@ h4.product-name a:hover,
 h5.product-name a:hover,
 p.product-name a:hover {
   color: #457103;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -4769,7 +4776,7 @@ p.product-name a:hover {
 }
 .product-view .product-shop .product-name .h1,
 .product-view .product-img-box .product-name h1 {
-  color: #3399cc;
+  color: #5aa320;
   margin-bottom: 10px;
   border: 0;
 }
@@ -4784,6 +4791,7 @@ p.product-name a:hover {
 .product-view .product-shop .product-name .h1 {
   float: left;
   margin-bottom: 5px;
+  text-transform: capitalize;
 }
 .product-view .product-shop .extra-info {
   float: left;
@@ -4828,7 +4836,7 @@ p.product-name a:hover {
 }
 .product-view .product-shop .price-box .special-price .price-label {
   font-size: 16px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .product-view .product-shop .price-box .special-price span.weee {
   color: #636363;
@@ -5896,7 +5904,7 @@ p.product-name a:hover {
  * ============================================ */
 .cart-table {
   float: left;
-  width: 60%;
+  width: 70%;
 }
 
 .cart .button {
@@ -5905,20 +5913,35 @@ p.product-name a:hover {
 
 .cart-forms,
 .cart-totals-wrapper,
-.crosssell {
-  float: right;
-  clear: right;
-  width: 40%;
-  padding-left: 20px;
-}
+.crosssell
+{
+  width: 70%;
+  float:left;
+  clear: left;
 
+  /*  padding-left: 5px;*/
+}
+.blockrightcard
+{
+  float:right;
+
+  width: 25%;
+  border-style:solid;
+  border-width:1px;
+  border-color:silver;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 10px;
+  clear: right;
+}
+.blockrightcard h3 a{color: #5aa320; font-size:14px; text-transform: capitalize;}
+.blockrightcard h3 a:hover {text-decoration: underline;}
 .cart-totals,
 .cart-forms .discount,
 .cart-forms .giftcard,
 .cart-forms .shipping {
   padding: 10px;
-  background-color: #f4f4f4;
-  border: 1px solid #cccccc;
+ /* background-color: #f4f4f4;
+  border: 1px solid #cccccc;*/
 }
 
 .cart-table,
@@ -6106,10 +6129,10 @@ p.product-name a:hover {
 .cart-table td,
 .cart-table tbody td {
   border-bottom: none;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .cart-table h2 {
-  color: #636363;
+  color: #5aa320;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 0;
@@ -6122,6 +6145,7 @@ p.product-name a:hover {
 .cart-table .product-cart-info,
 .cart-table .product-cart-actions {
   padding-left: 15px;
+  vertical-align: middle;
 }
 .cart-table tr {
   border-bottom: 1px solid silver;
@@ -6169,6 +6193,7 @@ p.product-name a:hover {
 .cart-table .product-cart-total,
 .cart-table .product-cart-price {
   text-align: center;
+  vertical-align: middle;
 }
 .cart-table .cart-tax-total {
   position: relative;
@@ -6330,6 +6355,7 @@ p.product-name a:hover {
   .cart-table td[data-rwd-label] {
     float: right;
     width: 75%;
+    vertical-align: middle;
   }
   .cart-table .product-cart-actions,
   .cart-table .product-cart-price {
@@ -6501,6 +6527,7 @@ p.product-name a:hover {
   font-size: 12px;
   margin-bottom: 20px;
   text-transform: uppercase;
+  color: #5aa320;
   width: 100%;
 }
 .cart .cart-totals table td {
