@@ -2,13 +2,17 @@
 <layout>
     <default>
         <remove name="global_notices"/>
-
+        <remove name="catalog.product.related"/>
+        <remove name="catalog.compare.sidebar"/>
         <reference name="header">
             <block type="cms/block" name="farm-header-info">
                 <action method="setBlockId">
                     <block_id>farm-header-info</block_id>
                 </action>
             </block>
+        </reference>
+        <reference name="right">
+            <remove name="right.reports.product.viewed" />
         </reference>
         <reference name="catalog.topnav">
             <block type="cms/block" name="menu-link">
@@ -36,5 +40,30 @@
     </cms_index_index>
     <catalog_category_default>
         <remove name="breadcrumbs"/>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
     </catalog_category_default>
+    <catalog_category_layered_nochildren>
+        <remove name="right.reports.product.viewed"/>
+    </catalog_category_layered_nochildren>
+    <catalog_product_view>
+        <remove name="breadcrumbs"/>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="page/html_pager" name="product_review_list.toolbar" />
+            <block type="core/template" name="product_review_list.count" template="review/product/view/count.phtml" />
+            <block type="review/product_view_list" name="product.info.product_additional_data" as="product_additional_data" template="review/product/view/list.phtml">
+                <block type="review/form" name="product.review.form" as="review_form">
+                    <block type="page/html_wrapper" name="product.review.form.fields.before" as="form_fields_before" translate="label">
+                        <label>Review Form Fields Before</label>
+                        <action method="setMayBeInvisible"><value>1</value></action>
+                    </block>
+                </block>
+            </block>
+         </reference>
+
+    </catalog_product_view>
 </layout>
