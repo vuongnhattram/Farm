@@ -2,7 +2,7 @@
 <layout>
     <default>
         <remove name="global_notices"/>
-        <remove name="catalog.product.related"/>
+        <!--<remove name="catalog.product.related"/>-->
         <remove name="catalog.compare.sidebar"/>
         <reference name="header">
             <block type="cms/block" name="farm-header-info">

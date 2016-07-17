@@ -6,7 +6,7 @@ $attributeSetId = Mage::getModel('eav/entity_attribute_set')
     ->getAttributeSetId();
 
 $products =$this->getProductCollection()
-    ->addFieldToFilter('attribute_set_id', $attributeSetId)->setPageSize(4);
+    ->addFieldToFilter('attribute_set_id', $attributeSetId)->setPageSize();
 ?>
 <?php if(count($products)): ?>
     <div class="new-post">

@@ -210,21 +210,21 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
         <button type="submit" name="update_cart_action" value="update_qty" title="<?php echo $this->__('Update'); ?>" class="button btn-update"><span><span><?php echo $this->__('Update'); ?></span></span>
         </button>
 
-        <ul class="cart-links">
-            <?php if ($isVisibleProduct): ?>
-                <li>
-                    <a href="<?php echo $this->getConfigureUrl() ?>" title="<?php echo $this->__('Edit item parameters') ?>"><?php echo $this->__('Edit') ?></a>
-                </li>
-            <?php endif ?>
-
-            <?php if ($this->helper('wishlist')->isAllowInCart()) : ?>
-            <li>
-                <?php if ($isVisibleProduct): ?>
-                    <a href="<?php echo $this->helper('wishlist')->getMoveFromCartUrl($_item->getId()); ?>" class="link-wishlist use-ajax"><?php echo $this->__('Move to wishlist'); ?></a>
-                <?php endif ?>
-            </li>
-            <?php endif ?>
-        </ul>
+<!--        <ul class="cart-links">-->
+<!--            --><?php //if ($isVisibleProduct): ?>
+<!--                <li>-->
+<!--                    <a href="--><?php //echo $this->getConfigureUrl() ?><!--" title="--><?php //echo $this->__('Edit item parameters') ?><!--">--><?php //echo $this->__('Edit') ?><!--</a>-->
+<!--                </li>-->
+<!--            --><?php //endif ?>
+<!---->
+<!--            --><?php //if ($this->helper('wishlist')->isAllowInCart()) : ?>
+<!--            <li>-->
+<!--                --><?php //if ($isVisibleProduct): ?>
+<!--                    <a href="--><?php //echo $this->helper('wishlist')->getMoveFromCartUrl($_item->getId()); ?><!--" class="link-wishlist use-ajax">--><?php //echo $this->__('Move to wishlist'); ?><!--</a>-->
+<!--                --><?php //endif ?>
+<!--            </li>-->
+<!--            --><?php //endif ?>
+<!--        </ul>-->
 
     </td>
 
