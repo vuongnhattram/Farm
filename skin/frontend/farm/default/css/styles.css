@@ -507,6 +507,7 @@ a:hover {
 }
 
 
+
 ol,
 ul {
   list-style: none;
@@ -595,7 +596,7 @@ h6, .h6 {
 }
 
 .availability.in-stock {
-  color: #238121;
+  color: #212121;
 }
 
 .availability.available-soon,
@@ -1301,6 +1302,7 @@ a.button:hover {
   float: none;
   width: auto;
   padding-left: 10px;
+  padding-top:10px;
   min-height: 400px;
   background-color:#fff;
 
@@ -4770,7 +4772,7 @@ p.product-name a:hover {
   border: 0;
 }
 .product-view .product-shop {
-  width: 50%;
+  width: 60%;
   float: right;
 }
 .product-view .product-shop .product-name {
@@ -4810,6 +4812,7 @@ p.product-name a:hover {
 }
 .product-view .product-shop .availability {
   font-size: 16px;
+  text-transform: capitalize;
 }
 .product-view .product-shop .price-box {
   margin-top: 0;
@@ -4824,10 +4827,10 @@ p.product-name a:hover {
 .product-view .product-shop .price-box .special-price .price,
 .product-view .product-shop .price-box .full-product-price .price {
   color: #238121;
-  font-size: 24px;
+  font-size: 14px;
 }
 .product-view .product-shop .price-box .special-price .price-label {
-  font-size: 16px;
+  font-size: 14px;
   text-transform: capitalize;
 }
 .product-view .product-shop .price-box .special-price span.weee {
@@ -4859,7 +4862,7 @@ p.product-name a:hover {
 }
 .product-view .add-to-cart-wrapper,
 .product-view .block-related {
-  width: 50%;
+  width: 60%;
   float: right;
   clear: right;
 }
@@ -4901,7 +4904,7 @@ p.product-name a:hover {
 
 }
 .product-img-box {
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .product-img-box .product-name h1 {
@@ -4997,7 +5000,7 @@ p.product-name a:hover {
     display: inline-block;
     width: 100%;
     background: #fff;
-   min-height:400px;
+   /*min-height:400px;*/
    margin-top: 20px;
 }
 .product-view .add-to-box:after,
@@ -5172,6 +5175,8 @@ p.product-name a:hover {
 }
 .default-product .product-collateral {
   clear: both;
+  display: none;
+/*//chỉnh trong code sau*/
 }
 
 .default-product .collateral-tabs dd h2 {
@@ -5620,7 +5625,7 @@ p.product-name a:hover {
   margin: 0;
   margin-bottom: 0.5em;
   color: #636363;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.2;
@@ -5634,7 +5639,9 @@ p.product-name a:hover {
 
 .block-content li.item {
   margin: 0 0 10px 9px;
-  display:inline;
+  display:inline-block;
+  width:30%;
+  vertical-align: top;
 }
 
 .block-related .product {
@@ -5664,15 +5671,16 @@ p.product-name a:hover {
 .block-related .product-details .price-box p:first-child,
 .block-related .product-details .price-box span:first-child {
   margin-left: 0;
-  font-size: 16px;
+  font-size: 12px;
   padding-right: 5px;
-  padding-left: 5px;
+  /*padding-left: 5px;*/
 }
 .block-related .product-details .price-box:after {
   content: '';
   display: table;
   clear: both;
 }
+
 .block-related .link-wishlist {
   display: none;
 }
@@ -5683,6 +5691,7 @@ p.product-name a:hover {
 .box-up-sell {
   margin-top: 10px;
 }
+.box-up-sell  h2{font-size: 20px; font-weight: 400;}
 .box-up-sell .ratings {
   display: none;
 }
@@ -7581,6 +7590,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 .customer-account-create .fieldset,
 .customer-account-create .buttons-set {
   margin-left: 30px;
+  padding-bottom: 30px;
 }
 @media only screen and (max-width: 479px) {
   .customer-account-create .fieldset,

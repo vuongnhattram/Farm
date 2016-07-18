@@ -43,10 +43,11 @@
                     <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_item->getName()) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize(75) ?>" width="75" height="75" alt="<?php echo $this->escapeHtml($_item->getName()) ?>" /></a>
                     <div class="product-details">
                         <p class="product-name"><a href="<?php echo $_item->getProductUrl() ?>"><?php echo $this->escapeHtml($_item->getName()) ?></a></p>
+                        
                         <?php echo $this->getPriceHtml($_item, true, '-related') ?>
-                        <?php if ($this->helper('wishlist')->isAllow()) : ?>
-                            <a href="<?php echo $this->getAddToWishlistUrl($_item) ?>" class="link-wishlist"><?php echo $this->__('Add to Wishlist') ?></a>
-                        <?php endif; ?>
+<!--                        --><?php //if ($this->helper('wishlist')->isAllow()) : ?>
+<!--                            <a href="--><?php //echo $this->getAddToWishlistUrl($_item) ?><!--" class="link-wishlist">--><?php //echo $this->__('Add to Wishlist') ?><!--</a>-->
+<!--                        --><?php //endif; ?>
                     </div>
                 </div>
             </li>
