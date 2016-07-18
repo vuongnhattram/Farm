@@ -266,7 +266,7 @@ h2.product-namecart a:hover{color: #457103;  font-weight: bold;  text-decoration
 /*==========================checkout page====================================*/
 .checkout-onepage-index .col-main{padding-top: 20px;}
 #checkout-progress-wrapper .block-title {
-    background-color: rgb(35, 129, 33);
+    background-color: #8BC34A;
     margin-top: 10px;
     padding: 15px 0 10px;
     text-align: center;
@@ -277,7 +277,7 @@ h2.product-namecart a:hover{color: #457103;  font-weight: bold;  text-decoration
 #checkout-progress-wrapper .block-title:before {
     z-index: 3;
     border-left: 16px solid transparent;
-    border-top: 11px solid rgb(35, 129, 33);
+    border-top: 11px solid #8BC34A;
     border-right: 16px solid transparent;
     content: '';
     position: absolute!important;
@@ -288,6 +288,14 @@ h2.product-namecart a:hover{color: #457103;  font-weight: bold;  text-decoration
 }
 #billing-progress-opcheckout{
     background-color: #f9a80c;
+}
+#shipping_method-progress-opcheckout{
+    background: bisque;
+}
+#shipping_method-progress-opcheckout:before {
+    border-top: 11px solid bisque;
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
 }
 #billing-progress-opcheckout:before {
     border-top: 11px solid #f9a80c;
@@ -306,10 +314,10 @@ h2.product-namecart a:hover{color: #457103;  font-weight: bold;  text-decoration
     margin-bottom: -11px;
 }
 #payment-progress-opcheckout {
-    background-color: #8d519a;
+    background-color: rgba(146, 154, 81, 0.56);
 }
 #payment-progress-opcheckout:before {
-    border-top: 11px solid #8d519a;
+    border-top: 11px solid rgba(146, 154, 81, 0.56);
     border-left: 19px solid transparent;
     border-right: 19px solid transparent;
 }
