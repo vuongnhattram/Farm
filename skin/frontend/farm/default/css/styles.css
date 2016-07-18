@@ -1085,8 +1085,7 @@ a.button:hover {
  * Breadcrumbs
  */
 .breadcrumbs {
-  overflow: hidden;
-  margin: -15px 0 15px;
+  margin:  0 15px;padding-top: 10px;
 }
 
 .breadcrumbs li {
@@ -1284,9 +1283,12 @@ a.button:hover {
 .col-right {
   float: right;
   width: 26%;
-  padding-right: 10px;border: 1px solid #cccccc;background-color: #fff;
-  border-top-width:0px;
-
+  padding-right: 10px;
+  border-top-width:0px;padding-top: 10px;
+  box-shadow: -3px 0 13px -11px rgba(214, 215, 216, 0.8), -3px 0 34px -11px rgba(214, 215, 216, 0.4);
+  -webkit-box-shadow: -3px 0 13px -11px rgba(214, 215, 216, 0.8), -3px 0 34px -11px rgba(214, 215, 216, 0.4);
+  -moz-box-shadow: -3px 0 13px -11px rgba(214, 215, 216, 0.8), -3px 0 34px -11px rgba(214, 215, 216, 0.4);
+  padding-bottom: 30px;
   /* Remove the 15px padding */
 }
 .col-right img {
@@ -6786,7 +6788,7 @@ p.product-name a:hover {
 }
 
 .opc .section.allow .step-title .number {
-  background-color: #99cce5;
+  background-color: rgba(35, 129, 33, 0.33);
 }
 
 .opc .section.allow .step-title h2 {
@@ -6912,8 +6914,7 @@ p.product-name a:hover {
 /* When a user progresses from the "Checkout Method" to "Billing Information" for the first time, the              */
 /* "opc-has-progressed-from-login" class gets added to the body. Also, the .opc element will only have the         */
 /* "opc-firststep-login" class if the first step of the checkout is the "Checkout Method" (eg, not when logged in) */
-body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section:not(#opc-login) .step-title,
-body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
+body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section:not(#opc-login) .step-title{
   opacity: 0;
 }
 
@@ -7005,29 +7006,18 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 
 /* One Page Checkout */
 .block-progress {
-  border: 0;
-  margin: 0;
-  border-left: 1px solid #cccccc;
   padding-left: 20px;
 }
 .block-progress .block-content {
   font-size: 13px;
 }
 .block-progress dt {
-  padding-top: 6px;
-  margin: 0;
-  margin-bottom: 10px;
-  color: #636363;
+  color: #fff;
   font-size: 14px;
   font-weight: bold;
-  font-style: normal;
   line-height: 1.4;
   text-rendering: optimizeSpeed;
   text-transform: uppercase;
-  margin-bottom: 6px;
-  text-transform: uppercase;
-  font-weight: normal;
-  color: #a0a0a0;
 }
 .block-progress dt.complete {
   color: #636363;

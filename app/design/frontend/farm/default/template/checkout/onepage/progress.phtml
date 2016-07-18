@@ -32,6 +32,7 @@
         <dl>
             <?php if ($this->getCheckout()->getStepData('billing', 'is_show')): ?>
             <div id="billing-progress-opcheckout">
+                <i class="billing-icon icon-elegant"></i>
                 <?php echo $this->getChildHtml('billing.progress') ?>
             </div>
             <?php endif; ?>
@@ -50,6 +51,7 @@
 
             <?php if ($this->getCheckout()->getStepData('payment', 'is_show')): ?>
             <div id="payment-progress-opcheckout">
+                <i class="payment-icon icon-elegant"></i>
                 <?php echo $this->getChildHtml('payment.progress') ?>
             </div>
             <?php endif; ?>

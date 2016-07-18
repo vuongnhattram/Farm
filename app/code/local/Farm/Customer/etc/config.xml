@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Farm_Customer>
+            <version>0.0.1</version>
+        </Farm_Customer>
+    </modules>
+    <global>
+        <models>
+            <customer>
+                    <rewrite>
+                        <address_abstract>Farm_Customer_Model_Address_Abstract</address_abstract>
+                    </rewrite>
+            </customer>
+        </models>
+    </global>
+</config>
