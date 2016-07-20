@@ -24,12 +24,20 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
+
 <?php
- $attribute_set_id =  Mage::getModel('eav/entity_setup','core_setup')
-    ->getAttributeSetId('catalog_product','ProductFarm');
-$_products = $this->getProductCollection()->addFieldToFilter('attribute_set_id', $attribute_set_id);
+// $attribute_set_id =  Mage::getModel('eav/entity_setup','core_setup')
+//    ->getAttributeSetId('catalog_product','ProductFarm');
+$attrSetName = 'ProductFarm';
+$attribute_set_id = Mage::getModel('eav/entity_attribute_set')
+    ->load($attrSetName, 'attribute_set_name')
+    ->getAttributeSetId();
+$_products = Mage::getModel('catalog/product')
+    ->getCollection()
+    ->addAttributeToSelect('*')->addAttributeToSort('created_at', 'desc')->addFieldToFilter('attribute_set_id', $attribute_set_id);
+ echo $_products->getSize();
 ?>
-<?php if ( count($_products) && $_products->getSize()): ?>
+<?php if ( $_products->getSelect()->limit(10) && $_products->getSize()): ?>
 
 <div class="widget widget-new-products">
     <div class="widget-title">
@@ -39,7 +47,7 @@ $_products = $this->getProductCollection()->addFieldToFilter('attribute_set_id',
     </div>
     <div class="widget-products">
         <?php echo $this->getPagerHtml() ?>
-        <?php $_columnCount = $this->getColumnCount(); ?>
+        <?php  $_columnCount = $this->getColumnCount(); ?>
         <?php $i=0; ?>
         <ul class="products-grid products-grid--max-<?php echo $_columnCount; ?>-col-widget">
             <?php foreach ($_products as $_product): ?>
