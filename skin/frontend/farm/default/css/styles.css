@@ -890,21 +890,6 @@ body:not(.customer-account) .block:first-child .block-title {
   background: #000;
   cursor: pointer;
 }
-.button:active,
-.cart-table .product-cart-actions .button:active,
-#co-shipping-method-form .buttons-set .button:active,
-.footer .button:active {
-  background: #297aa3;
-  color: #FFFFFF;
-}
-.button:focus,
-.cart-table .product-cart-actions .button:focus,
-#co-shipping-method-form .buttons-set .button:focus,
-.footer .button:focus {
-  background-color: #297aa3;
-  outline: none;
-  color: #FFFFFF;
-}
 
 a.button {
   text-decoration: none;
@@ -6719,12 +6704,12 @@ p.product-name a:hover {
 @media only screen and (min-width: 980px) {
   .checkout-onepage-index .col-main {
     float: left;
-    width: 68.75%;
+    width: 70%;
     padding-right: 20px;
   }
   .checkout-onepage-index .col-right,
   .checkout-onepage-index .col-left {
-    width: 31.25%;
+    width: 30%;
     display: block;
   }
   .checkout-onepage-index .col-right {
@@ -6838,6 +6823,7 @@ p.product-name a:hover {
 .opc select {
   max-width: 365px;
   width: 100%;
+    height: 30px;
 }
 
 .opc h3 {
@@ -7031,9 +7017,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   text-rendering: optimizeSpeed;
   text-transform: uppercase;
 }
-.block-progress dt.complete {
-  color: #212121;
-}
+
 .block-progress dd {
   padding-left: 15px;
   margin-bottom: 10px;
