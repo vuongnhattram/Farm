@@ -273,8 +273,10 @@ h2.product-namecart a:hover{color: #457103;  font-weight: bold;  text-decoration
 #checkout-progress-wrapper .block-title {background-color: #8BC34A;margin-top: 10px;padding: 15px 0 10px;text-align: center;position: relative;z-index: 2;color: #fff;}
 #checkout-progress-wrapper .block-title:before {z-index: 3;border-left: 16px solid transparent;border-top: 11px solid #8BC34A;border-right: 16px solid transparent;content: '';position: absolute!important;bottom: 0;left: 50%;margin-left: -16px;margin-bottom: -11px;}
 #billing-progress-opcheckout{background-color: #f9a80c;}
-#shipping_method-progress-opcheckout{background: bisque;}
-#shipping_method-progress-opcheckout:before {border-top: 11px solid bisque;border-left: 19px solid transparent;border-right: 19px solid transparent;}
+#shipping-progress-opcheckout{background-color:rgb(228, 47, 166)}
+#shipping-progress-opcheckout:before {border-top: 11px solid rgb(228, 47, 166);border-left: 19px solid transparent;border-right: 19px solid transparent;}
+#shipping_method-progress-opcheckout{background: #E04025;}
+#shipping_method-progress-opcheckout:before {border-top: 11px solid #E04025;border-left: 19px solid transparent;border-right: 19px solid transparent;}
 #billing-progress-opcheckout:before {border-top: 11px solid #f9a80c;border-left: 19px solid transparent;border-right: 19px solid transparent;}
 .opc-block-progress .block-content div:before {z-index: 2;border-left: 16px solid transparent;border-right: 16px solid transparent;content: '';position: absolute;top: 100%;left: 50%;margin-left: -16px;margin-bottom: -11px;}
 #payment-progress-opcheckout {background-color: rgba(146, 154, 81, 0.56);}
@@ -283,7 +285,6 @@ h2.product-namecart a:hover{color: #457103;  font-weight: bold;  text-decoration
 .opc-block-progress .block-content div i{padding: 0 10px;}
 .opc-block-progress .block-content div i, .opc-block-progress .block-content div dt{ display: inline-block;}
 .checkout-onepage-success .page-title{margin: 20px 0;text-align: center;width: auto;}
-#opc-shipping,#shipping-progress-opcheckout{display: none;}
 @media only screen and (max-width: 770px)
 {
     .fancy_list_wrapper .fancy_list_item{width: 90%;float: left;margin:0 calc(10%/2) 30px;text-align: center;}

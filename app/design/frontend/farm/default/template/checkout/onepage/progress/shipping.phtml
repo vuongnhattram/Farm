@@ -24,12 +24,13 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
+<i class="billing-icon icon-elegant"></i>
 <?php if ($this->getCheckout()->getStepData('shipping', 'complete')): ?>
 <?php $completeClass = $this->getCheckout()->getStepData('shipping', 'complete') ? 'complete' : ''; ?>
 <dt class="<?php echo $completeClass ?>">
     <?php echo $this->__('Shipping Address') ?> <span class="changelink"><span class="separator">|</span> <a
         href="#payment"
-        onclick="checkout.changeSection('opc-shipping');return false;"><?php echo $this->__('Change') ?></a></span>
+        onclick="checkout.changeSection('opc-shipping');return false;"><i class="edit-icon icon-elegant"></i></a></span>
 </dt>
 <dd class="<?php echo $completeClass ?>">
     <?php if ($this->getCheckout()->getStepData('shipping', 'complete')): ?>
