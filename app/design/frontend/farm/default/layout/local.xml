@@ -39,14 +39,16 @@
         </reference>
     </cms_index_index>
     <catalog_category_default>
-        <remove name="breadcrumbs"/>
+        <!--<remove name="breadcrumbs"/>-->
         <reference name="root">
             <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
         </reference>
+
     </catalog_category_default>
 
      <checkout_cart_index>
         <remove name="checkout.cart.coupon"/>
+         <!--hien block cms ra ngoai trang cart-->
         <reference name="checkout.cart.form.before">
             <block type="cms/block" name="top-product-right"  >
                 <action method="setBlockId"><block_id>product-farm-right-page</block_id></action>
@@ -54,7 +56,7 @@
         </reference>
      </checkout_cart_index>
     <catalog_product_view>
-        <remove name="breadcrumbs"/>
+        <!--<remove name="breadcrumbs"/>-->
         <reference name="root">
             <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
         </reference>
@@ -70,6 +72,14 @@
                 </block>
             </block>
         </reference>
+        <reference name="right">
+            <block type="cms/block" name="block-chuyen-nong-trai"><action method="setBlockId"><block_id>block-chuyen-nong-trai</block_id></action></block>
+            <block type="catalog/product_widget_new" name="bai-viet-moi" template="catalog/product/new-post.phtml"/>
+        </reference>
+        <reference name="product_list_toolbar">
+            <action method="setData"><key>_current_grid_mode</key><value>list</value></action>
+        </reference>
+
 
     </catalog_product_view>
 </layout>

@@ -206,18 +206,21 @@ body.html{ font-family: Arial, sans-serif;}
 #header-nav ol li,#header-nav  ol, #header-nav nav{
     /*display: inline-block;*/
 }
-.col-right .top-right{margin: 20px 0;background: #a4af43;color: #fff;padding: 15px 12px;}
+.col-right .top-right{margin: 20px 0;background: #004f5d;color: #fff;padding: 15px 0px 15px 15px;}
+.col-right .top-right h2 {color: #fff;}
+.col-right .top-right ul li a {color: #fff;}
+.col-right .top-right ul li a:hover {text-decoration: underline;}
 .section_row{margin-top: 35px;}
 .section_row h2{border-bottom: 2px solid #1f711d;    text-transform: uppercase;display: inline-block;padding: 0 15px 15px;width: 100%;color: #238121;font-size: 26px;font-weight: bold; text-align: center;}
 .section_row h5{text-align: center;font-size: 16px;margin: 10px 0 30px;}
 .section_row .circle-box{float: left;padding: 0 15px;text-align: center;margin: 0 0 40px;}
-.section_row .circle-box img{  border: 2px solid #3c6302;margin: 10px 0;  border-radius: 50%;max-width: 100%;display: inline-block;}
+.section_row .circle-box img{  border: 2px solid #3c6302;ma rgin: 10px 0;  border-radius: 50%;max-width: 100%;display: inline-block;}
 .cms-index-index .col-main{/*background: url('../images/port-bg.jpg') repeat*/;margin: 0px 0 0 0;}
 .fancy_list_wrapper .fancy_list_item{width: 30%;float: left;margin:0 calc(10%/6) 20px;}
 .fancy_list_wrapper .fancy_list_item img{max-width: 100%; margin: 0 auto;}
 .fancy_list_wrapper{display: inline-block; width: 100%;}
 .fancy_categories .icon-elegant{color: #8d8d8d;margin-right: 5px;}
-.fancy_categories a{margin-right: 5px;color: #636363}
+.fancy_categories a{margin-right: 5px;color: #212121}
 .fancy_list_wrapper h4 {margin-top: 20px;}
 .fancy_list_wrapper .short-des{margin: 10px 0;}
 .fancy_categories .continue-reading{color: rgba(39, 115, 39, 0.91);font-weight: 600;}
@@ -249,7 +252,7 @@ hr{margin-bottom: 20px;border: 0;border-top: 1px solid #eee;box-sizing: content-
 .new-post h4 a{color: #FEFEFE!important;}
 .product-grid.products-list > li:last-child{padding-bottom: 20px; }
 /*==========================product page====================================*/
-.write-post h1{margin: 20px 0 5px;font-weight: bold;font-size: 26px;padding: 0 15px;}
+.write-post h1{margin: 10px 0 5px;font-weight: bold;font-size: 26px;padding: 0 15px;}
 .write-post .toggle-tabs,.write-post .collateral-tabs dt,.write-post .collateral-tabs .tab-content > h2 {display: none;}
 .write-post img{max-width: 100%;}
 .write-post .product-collateral{padding: 15px 15px 0;}
@@ -264,7 +267,7 @@ hr{margin-bottom: 20px;border: 0;border-top: 1px solid #eee;box-sizing: content-
 h2.product-namecart a:hover{color: #457103;  font-weight: bold;  text-decoration: underline;}
 .box-up-sell .products-grid > li{width: 100%;}
 /*==========================checkout page====================================*/
-.checkout-onepage-index .col-main{padding-top: 20px;}
+.checkout-onepage-index .col-main{padding-top: 20px; padding-bottom: 20px;}
 #checkout-progress-wrapper .block-title {
     background-color: #8BC34A;
     margin-top: 10px;

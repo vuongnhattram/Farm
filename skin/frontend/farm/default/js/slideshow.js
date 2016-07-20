@@ -42,3 +42,9 @@ $j(document).ready(function () {
             fx: 'scrollHorz'
         });
 });
+/**
+ * Back To Top
+ *
+ * @author Fox
+ * @since 1.0.0
+ */

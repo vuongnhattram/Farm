@@ -804,7 +804,7 @@ body:not(.customer-account) .block:first-child .block-title {
  */
 .block-account .block-title,
 .block-cms-menu .block-title {
-  padding-top: 0;
+  padding-top: 20px;
   border-top: none;
 }
 .block-account li,
@@ -1085,27 +1085,29 @@ a.button:hover {
  * Breadcrumbs
  */
 .breadcrumbs {
-  margin:  0 15px;padding-top: 10px;
+  margin:  0 0px; padding-top: 10px;padding-left: 10px; padding-bottom: 10px;
+  background-color: gainsboro;
 }
 
 .breadcrumbs li {
-  float: right;
   font-size: 12px;
   text-transform: uppercase;
+  display:inline-block;
 }
-
+.breadcrumbs li:nth-child(4){ display: none;}
 .breadcrumbs a {
-  float: right;
-  color: #636363;
-  text-transform: lowercase;
+  color: #212121;
+  text-transform: none;
 }
-
+.breadcrumbs li:nth-child(3) span{
+ display: none;
+}
 .breadcrumbs a:hover {
   color: #238121;
 }
 
 .breadcrumbs strong {
-  color: #636363;
+  color: #212121;
   font-weight: normal;  text-transform: lowercase;
 }
 
@@ -1272,9 +1274,11 @@ a.button:hover {
 .col-left {
   float: left;
   width: 25%;
-  padding-left: 0;
-  /* Remove the 15px padding */
+  padding-left: 10px;
+  border-top-width:0px;
+  background-color: #ffffff;
   clear: left;
+
 }
 .col-left img {
   max-width: 100%;
@@ -1289,6 +1293,8 @@ a.button:hover {
   -webkit-box-shadow: -3px 0 13px -11px rgba(214, 215, 216, 0.8), -3px 0 34px -11px rgba(214, 215, 216, 0.4);
   -moz-box-shadow: -3px 0 13px -11px rgba(214, 215, 216, 0.8), -3px 0 34px -11px rgba(214, 215, 216, 0.4);
   padding-bottom: 30px;
+  background-color: #ffffff;
+
   /* Remove the 15px padding */
 }
 .col-right img {
@@ -1314,7 +1320,8 @@ a.button:hover {
 
 .col2-left-layout .col-main {
   float: right;
-  padding-right: 0;
+  padding-left: 20px;
+  background-color: #ffffff;
   /* Remove the 15px padding */
 }
 
@@ -1536,7 +1543,7 @@ a.button:hover {
 }
 
 .messages .error-msg li {
-  color: #636363;
+  color: #212121;
   border-left: 5px solid #df280a;
 }
 
@@ -2021,7 +2028,7 @@ span.weee {
 
 .toolbar,
 .pager {
-  color: #636363;
+  color: #212121;
   line-height: 30px;
   font-size: 12px;
 }
@@ -2152,7 +2159,7 @@ span.weee {
 
 .pages .current,
 .pages .current:hover {
-  color: #636363;
+  color: #212121;
   border: 1px solid #cccccc;
   width: 30px;
   background-color: #FFFFFF;
@@ -2434,7 +2441,7 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
 form .legend {
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #212121;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -2714,7 +2721,7 @@ p.required,
 #checkout-shipping-method-load .sp-methods dd label,
 #co-shipping-method-form .sp-methods dd label,
 .product-options ul.options-list label {
-  color: #636363;
+  color: #212121;
   background-color: #f4f4f4;
   padding: 5px 10px;
   display: inline-block;
@@ -3223,7 +3230,7 @@ a.skip-link {
     padding: 0 15px 0 25px;
     border-bottom: 1px solid #cccccc;
     text-align: left;
-    color: #636363;
+    color: #212121;
     text-transform: uppercase;
     line-height: 30px;
   }
@@ -3313,12 +3320,13 @@ a.skip-link {
   text-decoration: none;
   position: relative;
   display: block;
-  color: #636363;
+  color: #212121;
   line-height: 30px;
   font-family: Raleway,sans-serif, Arial;
 }
 .nav-primary li {
   position: relative;
+  padding:inherit;
 }
 .nav-primary li.level1 a {
   border-bottom: 1px solid #cccccc;
@@ -3421,16 +3429,19 @@ a.skip-link {
   }
   .nav-primary li.level0 ul {
 
-    background: #F1F1F1;
-    border: solid 1px #cccccc;
+    background: #fff;
+    border: 1px solid #cccccc;
     position: absolute;
     left: 0;
     top: 30px;
     /* Height of ".nav-primary a.level0" */
     z-index: 10;
-    width: 250px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 185px;
+    padding: 0px 10px 0px 10px ;
+    /*padding-left:10px;*/
+    /*padding-right: 10px;*/
+    /*padding-top:0px;*/
+    /*padding-bottom: 0px;*/
     display: none;
     text-transform: capitalize;
     text-align: left;
@@ -3453,7 +3464,7 @@ a.skip-link {
     right: 50px;
     top: 20px;
   }
-  .nav-primary li.level0 ul.level0 li.level1 a{color: #636363; border-top:0px;}
+  .nav-primary li.level0 ul.level0 li.level1 a{color: #212121; border-top:0px;}
   .nav-primary li.level0 ul.level0 li.level1 a:hover{color: #238121;}
   .nav-primary li.level0 ul.level0 li.level1.active a{color: #238121;}
   .nav-primary li.level0 li.parent > a {
@@ -3596,7 +3607,7 @@ a.skip-link {
   #header-account a {
     display: block;
     padding: 5px 10px;
-    color: #636363;
+    color: #212121;
     line-height: 2;
   }
 
@@ -4026,7 +4037,7 @@ h5.product-name,
 p.product-name {
   margin: 0;
   margin-bottom: 0.5em;
-  color: #636363;
+  color: #212121;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -4474,7 +4485,7 @@ p.product-name a:hover {
   display: none;
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #212121;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -4520,7 +4531,7 @@ p.product-name a:hover {
 .block-layered-nav .block-content > dl > dt {
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #212121;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -4703,7 +4714,7 @@ p.product-name a:hover {
   }
 
   .block-layered-nav dl ol > li > a {
-    color: #636363;
+    color: #212121;
     background-color: #f4f4f4;
     padding: 5px 10px;
   }
@@ -4717,7 +4728,7 @@ p.product-name a:hover {
   display: block;
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #212121;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -4836,7 +4847,7 @@ p.product-name a:hover {
   text-transform: capitalize;
 }
 .product-view .product-shop .price-box .special-price span.weee {
-  color: #636363;
+  color: #212121;
 }
 .product-view .product-shop .price-box .special-price span.weee span.price {
   font-size: 16px;
@@ -4845,7 +4856,7 @@ p.product-name a:hover {
 .product-view .product-shop .price-box .price-including-tax {
   display: block;
   line-height: 1.2;
-  color: #636363;
+  color: #212121;
 }
 .product-view .product-shop .price-box .price-excluding-tax .label,
 .product-view .product-shop .price-box .price-including-tax .label {
@@ -5262,7 +5273,7 @@ p.product-name a:hover {
     .default-product  .product-collateral > dl > dt {
     margin: 0;
     margin-bottom: 10px;
-    color: #636363;
+    color: #212121;
     font-size: 14px;
     font-weight: bold;
     font-style: normal;
@@ -5568,7 +5579,7 @@ p.product-name a:hover {
   padding: 0 0 10px;
   border: 0;
   background: 0;
-  color: #636363;
+  color: #212121;
 }
 @media only screen and (max-width: 1199px) {
   .product-options-bottom .product-pricing,
@@ -5589,7 +5600,7 @@ p.product-name a:hover {
 
 .product-options-bottom .tier-prices .price,
 .product-options-bottom .tier-prices .benefit {
-  color: #636363;
+  color: #212121;
 }
 
 /* "display: none" should be removed if products on site have a long list of product options and those product options */
@@ -5626,7 +5637,7 @@ p.product-name a:hover {
 .block-related .block-title h2 {
   margin: 0;
   margin-bottom: 0.5em;
-  color: #636363;
+  color: #212121;
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
@@ -5936,15 +5947,16 @@ p.product-name a:hover {
 }
 .blockrightcard
 {
-  float:right;
+  float: right;
+  width: 27%;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-top-width: 0px;
 
-  width: 25%;
-  border-style:solid;
-  border-width:1px;
-  border-color:silver;
-  padding: 5px 5px 5px 5px;
-  margin-bottom: 10px;
-  clear: right;
+  box-shadow: -3px 0 13px -11px rgba(214, 215, 216, 0.8), -3px 0 34px -11px rgba(214, 215, 216, 0.4);
+  -webkit-box-shadow: -3px 0 13px -11px rgba(214, 215, 216, 0.8), -3px 0 34px -11px rgba(214, 215, 216, 0.4);
+  -moz-box-shadow: -3px 0 13px -11px rgba(214, 215, 216, 0.8), -3px 0 34px -11px rgba(214, 215, 216, 0.4);
+  padding-bottom: 30px;
 }
 .blockrightcard h3 a{color: #238121; font-size:14px; text-transform: capitalize;}
 .blockrightcard h3 a:hover {text-decoration: underline;}
@@ -7020,7 +7032,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   text-transform: uppercase;
 }
 .block-progress dt.complete {
-  color: #636363;
+  color: #212121;
 }
 .block-progress dd {
   padding-left: 15px;
@@ -7036,7 +7048,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 .block-progress .payment-info dt {
   padding: 0;
   margin: 0 0 3px 0;
-  color: #636363;
+  color: #212121;
   text-transform: none;
   font-style: italic;
   float: left;
@@ -7271,7 +7283,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   border-radius: 3px;
   font-size: 14px;
   text-align: center;
-  color: #636363;
+  color: #212121;
   text-decoration: none;
   box-sizing: content-box;
 }
@@ -7616,7 +7628,9 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 body.customer-account .my-account .page-title h1 {
   border: 0;
   text-align: left;
+  padding-top: 20px;
 }
+.customer-account .my-account{min-height: 400px;}
 body.customer-account .my-account .title-buttons {
   position: relative;
   text-align: right;
@@ -8626,7 +8640,7 @@ div.paypal-logo span > img {
 }
 
 #wishlist-table .price-box .price {
-  color: #636363;
+  color: #212121;
 }
 #wishlist-table .giftregisty-add {
   margin-top: 5px;
@@ -8869,7 +8883,7 @@ div.paypal-logo span > img {
   width: 40px;
   float: right;
   display: block;
-  color: #636363;
+  color: #212121;
   text-decoration: none;
   font-weight: normal;
   font-size: 30px;
@@ -9003,7 +9017,7 @@ div.paypal-logo span > img {
 }
 @media only screen and (max-width: 770px) {
   .header-minicart .subtotal .label {
-    color: #636363;
+    color: #212121;
   }
   .header-minicart .minicart-wrapper:before {
     background-color: #EDEDED;
@@ -9222,7 +9236,7 @@ div.paypal-logo span > img {
 }
 .cms-page-view .std p,
 .cms-no-route .std p {
-  color: #636363;
+  color: #212121;
   font-size: 14px;
   font-style: normal;
   line-height: 24px;
@@ -9237,7 +9251,7 @@ div.paypal-logo span > img {
 }
 .cms-page-view .std li,
 .cms-no-route .std li {
-  color: #636363;
+  color: #212121;
   font-size: 14px;
   font-style: normal;
   line-height: 24px;
@@ -9277,7 +9291,7 @@ div.paypal-logo span > img {
 #accordion > dl > dt {
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #212121;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;

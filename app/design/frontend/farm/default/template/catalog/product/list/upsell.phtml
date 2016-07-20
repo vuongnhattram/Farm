@@ -43,7 +43,9 @@
             <h3 class="product-name"><a href="<?php echo $_link->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_link->getName()) ?>"><?php echo $this->escapeHtml($_link->getName()) ?></a></h3>
             <?php echo $this->getPriceHtml($_link, true, '-upsell') ?>
             <?php echo $this->getReviewsSummaryHtml($_link) ?>
+
         </li>
+       
             <?php /*else: ?>
             <td class="empty">&nbsp;</td>
             <?php endif; ?>
