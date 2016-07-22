@@ -1,0 +1,52 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2014 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/* @var $this Mage_Catalog_Block_Product_Compare_List */
+?>
+
+<?php if (($_products = $this->getProductCollection()) && $_products->getSize()): ?>
+    <div class="new-post">
+         <h3><?php echo $this->__('Most Popular view')?></h3>
+
+        <?php $_collectionSize = 5;//count($_products->getItems()); echo $_collectionSize; ?>
+<!--        <ul class="products-grid" id="products-grid-table">-->
+        <ul >
+
+
+            <?php $i=1; foreach ($_products->getItems() as $_product): ?>
+                <li id="td_<?php echo $i;?>" <?php if($i%5==0 or $i==$_collectionSize){echo 'class="last"';} ?> >
+                    <div id="cont_<?php echo $i;?>">
+                        <a class="product-image" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($this->getImageLabel($_product, 'small_image')) ?>">
+                            <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(300,157); ?>" width="300" height="157" alt="<?php echo $this->htmlEscape($this->getImageLabel($_product, 'small_image')) ?>" title="<?php echo $this->htmlEscape($this->getImageLabel($_product, 'small_image')) ?>" />
+                        </a>
+                        <h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>"><?php echo $this->htmlEscape($_product->getName()) ?></a></h3>
+
+                    </div>
+                </li>
+                <?php $i++; endforeach; $kol = $_collectionSize; ?>
+        </ul>
+    </div>
+<?php endif; ?>
+
